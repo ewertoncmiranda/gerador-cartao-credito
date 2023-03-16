@@ -45,4 +45,13 @@ public class Proposta {
     private String status ;
     private String documento;
     private String id;
+    @Override
+    public String toString() {
+        return "Proposta{" +
+                "nome='" + nome + '\'' +
+                ", status='" + status + '\'' +
+                ", documento='" + documento + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

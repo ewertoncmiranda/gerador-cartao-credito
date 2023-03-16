@@ -33,6 +33,8 @@ public class ListenerPropostaQueue {
             List<Message> messages = sqsClient().receiveMessage(receiveMessageRequest).messages();
             messages.stream().forEach(it->{
                 System.out.println(it.body());
+
+                String body = it.body();
             });
 
 
